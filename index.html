@@ -7,6 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <h1></h1>
+        <form class="easy-form" action="php/send-mail.php" method="post">
+            <h2>01. проста форма</h2>
+            <label for=""><input type="text"></label>
+            <label for=""><input type="text"></label>
+            <label for="">
+                <select>
+                    <option value="">Ваше місто</option>
+                    <option value="">Київ</option>
+                    <option value="">Львів</option>
+                    <option value="">Хмельницький</option>
+                </select>
+            </label>
+            <label for=""><textarea name="" id="" cols="30" rows="10"></textarea></label>
+            <input type="submit">
+        </form>
+        <form class="elements" action="php/send-mail.php" method="post">
+            <h2>02. елементи</h2>
+            <label for=""><input type="radio">Нова Пошта</label>
+            <label for=""><input type="radio">Кур’єр</label>
+            <label for=""><input type="radio">Самовивіз</label>
+            <label for=""><input type="checkbox">Прочитав умови договору</label>
+            <label for=""><input type="checkbox">Згідний з ПДВ 9%</label>
+            <label for=""><input type="checkbox">Отримувати новини на ел. пошту</label>
+        </form>
+        <form class="stylish-checkbox" action="php/send-mail.php" method="post">
+            <label for=""><input type="text">Чоловік</label>
+            <label for=""><input type="text">Жінка</label>
+            <label for=""><input type="text">Отримувати новини</label>
+            <label for=""><input type="text">Купити додому ковбаси</label>
+            <label for=""><input type="text">Включити світло</label>
+        </form>
+        
+    </div>
 </body>
 </html>
