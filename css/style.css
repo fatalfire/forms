@@ -26,12 +26,23 @@ body{
     font-family: Roboto;
     font-size: 14px;
 }
+h1{
+    text-align: center;
+    margin: 70px 0 20px;
+    font-family: 'Roboto Slab';
+    color: #1f222c;
+}
+.form{
+    padding: 50px 0;
+    border-bottom: 1px solid #dcdcde;
+}
 .wrapper{
     width: 990px;
     margin: 0 auto;
 }
 .left-wrapper{
     width: 330px;
+    border: none;
 }
 .text-focus:focus,
 .text-focus:hover{
@@ -56,7 +67,8 @@ label::after{
     position: absolute;
 }
 .check,
-.radio{
+.radio,
+.switcher{
     visibility: hidden;
 }
 .radio+label::before{
@@ -178,51 +190,57 @@ label.special{
 .elements-third table tr:first-child td{  
     padding-bottom: 15px;
 }
-
-.stylish-checkbox{
-    width: 100%;
-    display: block;
-}
-.stylish-checkbox-first,
-.stylish-checkbox-second{
-    
-}
-.stylish-checkbox-first{
+.stylish-checkbox-left{
     width: 330px;
     position: relative;
     float: left;
-    clear: both;
 }
-.stylish-checkbox-first input{
-    width: 100%;
+.stylish-checkbox-left input{
+    visibility: hidden;
 }
-.stylish-checkbox-first::before{
+.stylish-checkbox-left label{
+    padding-left: 85px;
+}
+.stylish-checkbox-left p{
+    margin: 65px 0;
+}
+.man,
+.woman{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f222c;
+}
+#man:checked+.man,
+#woman:checked+.woman{
+    color: #3e6aff;
+}
+.man::before,
+.woman::before{
     content: "";
     position: absolute;
-    display: block;
-    background-image: url(/img/man.png);
-    background-repeat: no-repeat;
     width: 70px;
     height: 70px;
+    left: 0;
+    top: -27px;
+    border-radius: 50%;
+    border: 2px solid transparent;
 }
-.stylish-checkbox-second{
-    width: 350px;
-    position: relative;
-    text-align: center;
-    float: left;
-    clear: both;
+.man::before{
+    background: #ccc url(../img/man-black.png) no-repeat center bottom;
 }
-.stylish-checkbox-second input{
-    width: 100%;
+.woman::before{
+    background: #ccc url(../img/woman-black.png) no-repeat center bottom;
 }
-.stylish-checkbox-second::before{
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url(/img/women.png);
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+#man:checked+label:before{
+    background-image: url(../img/man-bright.png);
+    border-color: #3e6aff;
+}
+#woman:checked+label::before{
+    background-image: url(../img/woman-bright.png);
+    border-color: #3e6aff;
+}
+.switcher+label:before{
+    
 }
 .form-table input,
 .form-table select,

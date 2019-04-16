@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,25 @@
 </head>
 <body>
     <div class="wrapper">
-        <h1></h1>
-        <form class="easy-form left-wrapper" action="php/send-mail.php" method="post">
-            <h2>01. проста форма</h2>
-            <label for=""><input class="text-focus" type="text" placeholder="Введіть ім’я"></label>
-            <label for=""><input class="text-focus" type="text" placeholder="Email"></label>
-            <label for="">
-                <select>
-                    <option value="" disabled>Ваше місто</option>
-                    <option value="">Київ</option>
-                    <option value="">Львів</option>
-                    <option value="">Хмельницький</option>
-                </select>
-            </label>
-            <label for=""><textarea name="" id="" cols="30" rows="10" placeholder="Email"></textarea></label>
-            <input class="button" type="submit" value="Зареєструватися">
+        <h1>Форми</h1>
+        <form class="easy-form form" action="php/send-mail.php" method="post">
+            <fieldset class="left-wrapper">
+                <h2>01. проста форма</h2>
+                <label for=""><input class="text-focus" type="text" placeholder="Введіть ім’я"></label>
+                <label for=""><input class="text-focus" type="text" placeholder="Email"></label>
+                <label for="">
+                    <select>
+                        <option value="" disabled>Ваше місто</option>
+                        <option value="">Київ</option>
+                        <option value="">Львів</option>
+                        <option value="">Хмельницький</option>
+                    </select>
+                </label>
+                <label for=""><textarea name="" id="" cols="30" rows="10" placeholder="Email"></textarea></label>
+                <input class="button" type="submit" value="Зареєструватися">
+            </fieldset>
         </form>
-        <form class="elements clear" action="php/send-mail.php" method="post">
+        <form class="elements clear form" action="php/send-mail.php" method="post">
             <h2>02. елементи</h2>
             <div class="elements-first">
                 <p>
@@ -62,7 +65,7 @@
                         <td class="sub-table">
                             <input class="check" type="checkbox" id="elements-third-one">
                             <label for="elements-third-one">Новинки</label>
-                            <input class="check" type="checkbox"id="elements-third-two">
+                            <input class="check" type="checkbox" id="elements-third-two">
                             <label for="elements-third-two">Акційні товари</label>
                             <input class="check" type="checkbox" id="elements-third-three">
                             <label for="elements-third-three">Розпродаж</label>
@@ -75,19 +78,23 @@
                 </table>
             </div>
         </form>
-        <form class="stylish-checkbox" action="php/send-mail.php" method="post">
+        <form class="stylish-checkbox clear form" action="php/send-mail.php" method="post">
             <h2>03. стилізовані чекбокси</h2>
-            <div class="stylish-checkbox-first">
-                <label for=""><input type="radio">Чоловік</label>
-                <label for=""><input type="radio">Жінка</label>
+            <div class="stylish-checkbox-left">
+                <p>
+                    <input type="radio" id="man" name="picture"><label class="man" for="man">Чоловік</label>
+                </p>
+                <p>
+                    <input type="radio" id="woman" name="picture"><label class="woman" for="woman">Жінка</label>
+                </p>
             </div>
-            <div class="stylish-checkbox-second">
-                <label for=""><input type="radio">Отримувати новини</label>
-                <label for=""><input type="radio">Купити додому ковбаси</label>
-                <label for=""><input type="radio">Включити світло</label>
+            <div class="stylish-checkbox-right">
+                <input type="radio" class="switcher" id="switcher-one" name="switcher"><label for="switcher-one">Отримувати новини</label>
+                <input type="radio" class="switcher" id="switcher-two" name="switcher"><label for="switcher-two">Купити додому ковбаси</label>
+                <input type="radio" class="switcher" id="switcher-three" name="switcher"><label for="switcher-three">Включити світло</label>
             </div>
         </form>
-        <form class="form-table" action="php/send-mail.php" method="post">
+        <form class="form-table form" action="php/send-mail.php" method="post">
             <h2>04. форма таблицею</h2>
             <table>
                 <tr>
@@ -159,7 +166,7 @@
                 </tr>
             </table>
         </form>
-        <form class="form-table-two" action="php/send-mail.php" method="post">
+        <form class="form-table-two form" action="php/send-mail.php" method="post">
             <h2>05. форма таблицею</h2>
             <div>
                 <h3>Оформлення заявки</h3>
