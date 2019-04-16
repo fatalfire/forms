@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    font-family: Roboto;
+    font-size: 14px;
+}
+.wrapper{
+    width: 990px;
+    margin: 0 auto;
+}
+.left-wrapper{
+    width: 330px;
+}
+.text-focus:focus,
+.text-focus:hover{
+    border-color: #3e6aff;
+    box-shadow: 0 0 5px rgba(62,106,255,0.55);
+}
+.button{
+    background-color: #12d660;
+    color: #fff;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0 2px 5px rgba(8,118,52,0.35);
+    background: #07be51;
+}
+label{
+    position: relative;
+}
+label::before,
+label::after{
+    content: "";
+    position: absolute;
+}
+.check,
+.radio{
+    visibility: hidden;
+}
+.radio+label::before{
+    border: 1px solid #ccc;
+    width: 15px;
+    height: 15px;
+    left: -25px;
+    border-radius: 50%;
+}
+.radio:checked+label::before{
+    border: 1px solid #3e6aff;
+}
+.radio:checked+label::after{
+    width: 7px;
+    height: 7px;
+    background-color: #3e6aff;
+    top: 3px;
+    left: -20px;
+    border-radius: 50%;
+}
+.check:checked+label::after{
+    width: 8px; 
+    height: 4px;
+    transform: rotate(-45deg);
+    border: 2px solid #3e6aff;
+	border-top-color: transparent;
+    border-right-color: transparent;
+    left: -22px;
+    top: 1px;
+}
+.check:checked+label::before{
+    border: 1px solid #3e6aff;
+}
+.check+label::before{
+    border: 1px solid #ccc;
+    width: 16px;
+    height: 16px;
+    left: -25px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.clear:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+h2{
+    font-size: 20px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+input,
+textarea,
+select{
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    resize: vertical;
+    min-height: 40px;
+    max-height: 300px;
+}
+.easy-form input,
+.easy-form select,
+.easy-form textarea{
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+}
+.elements{
+    width: 100%;
+}
+.elements-first{
+    float: left;
+    width: 166px;
+}
+.elements-second{
+    float: left;
+    width: 260px;
+}
+.elements-third{
+    float: right;
+}
+label.special{
+    position: relative;
+    display: inline-block;
+}
+.special input{
+    border-radius: 2px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    font-family: Roboto ;
+}
+
+.special::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/form1.png);
+    right: 13px;
+    top: 15px;
+}
+.special:hover::before{
+    display: none;
+}
+.elements-third{
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+}
+.elements-third table tr td:first-child{
+    width: 80px;
+}
+.elements-third table tr:first-child td{  
+    padding-bottom: 15px;
+}
+
+.stylish-checkbox{
+    width: 100%;
+    display: block;
+}
+.stylish-checkbox-first,
+.stylish-checkbox-second{
+    
+}
+.stylish-checkbox-first{
+    width: 330px;
+    position: relative;
+    float: left;
+    clear: both;
+}
+.stylish-checkbox-first input{
+    width: 100%;
+}
+.stylish-checkbox-first::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(/img/man.png);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+}
+.stylish-checkbox-second{
+    width: 350px;
+    position: relative;
+    text-align: center;
+    float: left;
+    clear: both;
+}
+.stylish-checkbox-second input{
+    width: 100%;
+}
+.stylish-checkbox-second::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(/img/women.png);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+}
+.form-table input,
+.form-table select,
+.form-table textarea{
+    width: 340px;
+}
+.sub-table label{
+    padding-right: 23px;
+}
+.sub-table label:last-child{
+    padding-right: 0;
+}
