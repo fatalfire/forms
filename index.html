@@ -14,17 +14,17 @@
         <form class="easy-form form" action="php/send-mail.php" method="post">
             <fieldset class="left-wrapper">
                 <h2>01. проста форма</h2>
-                <label for=""><input class="text-focus" type="text" placeholder="Введіть ім’я"></label>
-                <label for=""><input class="text-focus" type="text" placeholder="Email"></label>
+                <label for=""><input class="text-focus mb10" type="text" placeholder="Введіть ім’я"></label>
+                <label for=""><input class="text-focus mb10" type="text" placeholder="Email"></label>
                 <label for="">
-                    <select>
+                    <select class="mb10">
                         <option value="" disabled>Ваше місто</option>
                         <option value="">Київ</option>
                         <option value="">Львів</option>
                         <option value="">Хмельницький</option>
                     </select>
                 </label>
-                <label for=""><textarea name="" id="" cols="30" rows="10" placeholder="Email"></textarea></label>
+                <label for=""><textarea class="mb10" name="" id="" cols="30" rows="10" placeholder="Email"></textarea></label>
                 <input class="button" type="submit" value="Зареєструватися">
             </fieldset>
         </form>
@@ -89,25 +89,27 @@
                 </p>
             </div>
             <div class="stylish-checkbox-right">
-                <input type="radio" class="switcher" id="switcher-one" name="switcher"><label for="switcher-one">Отримувати новини</label>
-                <input type="radio" class="switcher" id="switcher-two" name="switcher"><label for="switcher-two">Купити додому ковбаси</label>
-                <input type="radio" class="switcher" id="switcher-three" name="switcher"><label for="switcher-three">Включити світло</label>
+                <p>
+                    <input type="radio" class="switcher" id="switcher-one" name="switcher"><label for="switcher-one">Отримувати новини</label>
+                </p>
+                <p>
+                    <input type="radio" class="switcher" id="switcher-two" name="switcher"><label for="switcher-two">Купити додому ковбаси</label>
+                </p>
+                <p>
+                    <input type="radio" class="switcher" id="switcher-three" name="switcher"><label for="switcher-three">Включити світло</label>
+                </p>
             </div>
         </form>
         <form class="form-table form" action="php/send-mail.php" method="post">
             <h2>04. форма таблицею</h2>
-            <table>
-                <tr>
-                    <td colspan="2">
-                        Заповніть усі необхідні поля
-                    </td>
-                </tr>
+            <p> Заповніть усі необхідні поля</p>
+            <table>    
                 <tr>
                     <td>
                         ФІО:
                     </td>
                     <td>
-                        <lable><input type="text" placeholder="Введіть ім’я"></lable>
+                        <lable><input class="text-focus" type="text" placeholder="Введіть ім’я"></lable>
                     </td>
                 </tr>
                 <tr>
@@ -115,7 +117,7 @@
                         Пароль:
                     </td>
                     <td>
-                        <lable><input type="text" placeholder="Введіть не менше 6 символів"></lable>
+                        <lable><input class="text-focus" type="text" placeholder="Введіть не менше 6 символів"></lable>
                     </td>
                 </tr>
                 <tr>
@@ -136,8 +138,8 @@
                         Стать:
                     </td>
                     <td>
-                        <lable><input type="radio">Чоловік</lable>
-                        <lable><input type="radio">Жінка</lable>
+                        <input class="radio" type="radio" id="radioman" name="radiopeople"><label for="radioman">Чоловік</label>
+                        <input class="radio" type="radio" id="radiowoman" name="radiopeople"><label for="radiowoman">Жінка</label>
                     </td>
                 </tr>
                 <tr>
@@ -145,7 +147,7 @@
                         Фото:
                     </td>
                     <td>
-                        <lable><input type="file"></lable>
+                        <lable><button class="file">Виберіть файл</button></lable>
                     </td>
                 </tr>
                 <tr>
@@ -153,7 +155,7 @@
                         Коментарій:
                     </td>
                     <td>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Введіть текст повідомлення"></textarea>
+                        <textarea class="text-focus" name="" id="" cols="30" rows="10" placeholder="Введіть текст повідомлення"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -161,7 +163,7 @@
 
                     </td>
                     <td>
-                        <input type="submit">
+                        <input class="button" type="submit" value="Зареєструватися">
                     </td>
                 </tr>
             </table>
