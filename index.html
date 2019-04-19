@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Форми</title>
 </head>
+
 <body>
     <div class="wrapper">
         <h1>Форми</h1>
-        <form class="easy-form form" action="php/send-mail.php" method="post">
+        <form class="easy-form form input-type" action="php/send-mail.php" method="post">
             <fieldset class="left-wrapper">
                 <h2>01. проста форма</h2>
                 <label for=""><input class="text-focus mb10" type="text" placeholder="Введіть ім’я"></label>
@@ -24,7 +25,8 @@
                         <option value="">Хмельницький</option>
                     </select>
                 </label>
-                <label for=""><textarea class="mb10" name="" id="" cols="30" rows="10" placeholder="Email"></textarea></label>
+                <label for=""><textarea class="mb10" name="" id="" cols="30" rows="10"
+                        placeholder="Email"></textarea></label>
                 <input class="button" type="submit" value="Зареєструватися">
             </fieldset>
         </form>
@@ -90,20 +92,23 @@
             </div>
             <div class="stylish-checkbox-right">
                 <p>
-                    <input type="radio" class="switcher" id="switcher-one" name="switcher"><label for="switcher-one">Отримувати новини</label>
+                    <input type="radio" class="switcher" id="switcher-one" name="switcher"><label
+                        for="switcher-one">Отримувати новини</label>
                 </p>
                 <p>
-                    <input type="radio" class="switcher" id="switcher-two" name="switcher"><label for="switcher-two">Купити додому ковбаси</label>
+                    <input type="radio" class="switcher" id="switcher-two" name="switcher"><label
+                        for="switcher-two">Купити додому ковбаси</label>
                 </p>
                 <p>
-                    <input type="radio" class="switcher" id="switcher-three" name="switcher"><label for="switcher-three">Включити світло</label>
+                    <input type="radio" class="switcher" id="switcher-three" name="switcher"><label
+                        for="switcher-three">Включити світло</label>
                 </p>
             </div>
         </form>
-        <form class="form-table form" action="php/send-mail.php" method="post">
+        <form class="form-table form input-type" action="php/send-mail.php" method="post">
             <h2>04. форма таблицею</h2>
             <p> Заповніть усі необхідні поля</p>
-            <table>    
+            <table>
                 <tr>
                     <td>
                         ФІО:
@@ -138,8 +143,10 @@
                         Стать:
                     </td>
                     <td>
-                        <input class="radio" type="radio" id="radioman" name="radiopeople"><label for="radioman">Чоловік</label>
-                        <input class="radio" type="radio" id="radiowoman" name="radiopeople"><label for="radiowoman">Жінка</label>
+                        <input class="radio" type="radio" id="radioman" name="radiopeople"><label
+                            for="radioman">Чоловік</label>
+                        <input class="radio" type="radio" id="radiowoman" name="radiopeople"><label
+                            for="radiowoman">Жінка</label>
                     </td>
                 </tr>
                 <tr>
@@ -155,7 +162,8 @@
                         Коментарій:
                     </td>
                     <td>
-                        <textarea class="text-focus" name="" id="" cols="30" rows="10" placeholder="Введіть текст повідомлення"></textarea>
+                        <textarea class="text-focus textarea" name="" id="" cols="30" rows="10"
+                            placeholder="Введіть текст повідомлення"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -170,27 +178,37 @@
         </form>
         <form class="form-table-two form" action="php/send-mail.php" method="post">
             <h2>05. форма таблицею</h2>
-            <div>
-                <h3>Оформлення заявки</h3>
-                <label for=""><input type="text">Прізвище та ім’я</label>
-                <label for=""><input type="text">Ел. пошта</label>
-                <label for=""><input type="text">Телефон</label>
-            </div>
-            <div>
-                <select name="" id="">
-                    <option value=""></option>
-                </select>
-                <label for=""><input type="text">Адреса</label>
-            </div>
-            <div>
-                <label for=""><input type="text">Місто</label>
-                <label for=""><input type="text">Будинок</label>
-                <label for=""><input type="text">Поштовий індекс</label>
-                <label for=""><input type="checkbox">Я погоджуюсь з правилами оплати та доставки товару</label>
-            </div>
-            <div>
-                <label for=""><input type="reset">Повернутися назад</label>
-                <label for=""><input type="submit">Оформити покупку</label>
+            <h3>Оформлення заявки</h3>
+            <table class="line-bottom input-type">
+                <tr>
+                    <td><label for=""><input class="text-focus" type="text"><span>Прізвище та ім’я</span></label></td>
+                    <td><label for=""><input class="text-focus" type="text"><span>Ел. пошта</span></label></td>
+                    <td><label for=""><input class="text-focus" type="text"><span>Телефон</span></label></td>
+                </tr>
+            </table>
+            <table class="input-type">
+                <tr>
+                    <td>
+                        <label for=""><span>Країна</span>
+                            <select class="text-focus" name="" id="">
+                                <option value="">Індонезія</option>
+                                <option value="">Україна</option>
+                                <option value="">Польща</option>
+                            </select>
+                        </label>
+                    </td>
+                    <td colspan="2"><label for=""><input class="text-focus" type="text"><span>Адреса</span></label></td>
+                </tr>
+                <tr>
+                    <td><label for=""><input class="text-focus" type="text"><span>Місто</span></label></td>
+                    <td><label for=""><input class="text-focus" type="text"><span>Будинок</span></label></td>
+                    <td> <label for=""><input class="text-focus" type="text"><span>Поштовий індекс</span></label></td>
+                </tr>
+            </table>
+            <p class="line-bottom"><input class="check" type="checkbox" id="agreement"><label for="agreement"> Я погоджуюсь з правилами оплати та доставки товару</label></p>
+            <div class="clear footer-button">
+                <label for=""><input class="reset" type="reset" value="Повернутися назад"></label>
+                <label for=""><input class="button submit" type="submit" value="Оформити покупку"></label>
             </div>
         </form>
     </div>
