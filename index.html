@@ -26,7 +26,8 @@
                     </select>
                 </label>
                 <label for=""><textarea class="mb10" name="" id="" cols="30" rows="10"
-                        placeholder="Email"></textarea></label>
+                    
+                    placeholder="Email"></textarea></label>
                 <input class="button" type="submit" value="Зареєструватися">
             </fieldset>
         </form>
@@ -211,6 +212,21 @@
                 <label for=""><input class="button submit" type="submit" value="Оформити покупку"></label>
             </div>
         </form>
+        <div class="fixed-form">
+            <input class="close" type="checkbox" id="close"><label for="close">&times;</label>
+            <div>
+                <h2>06. фіксована форма</h2>
+                <form class="input-type" action="php/send-mail.php">
+                    <p><label for="login">Логін</label></p>
+                    <p><input class="text-focus little-input" type="text" name="" id="login"></p>
+                    <p><label for="password">Пароль</label></p>
+                    <p><input class="text-focus little-input" type="password" name="" id="password"></p>
+                    <p><a href="#">Забули пароль?</a></p>
+                    <p><input class="check" type="checkbox" id="fixed-form-agree"><label for="fixed-form-agree">Запам’ятати пароль</label></p>
+                    <input class="button" type="submit" name="" id="" value="Увійти">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
